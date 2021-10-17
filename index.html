@@ -4,20 +4,23 @@
     <title>Posaunenchor Lüttringhausen Terminassistent</title>
     <meta charset="UTF-8" />
     <style>
-      div {
-          background-image: url('BackgroundImageLuettrPC.jpg');
-      }
     </style>
   </head>
 
   <body>
+    <div style="background-image: url('BackgroundImageLuettrPC.jpg');">
     <!-- 1. Load the webchat.js bundle via a script tag -->
     <script src="webchat.js"></script>
 
     <!-- Initialize the Webchat towards a Cogngiy Endpoint via initWebchat() -->
     <script>
       initWebchat(
-        "https://endpoint-trial.cognigy.ai/ef156b28ca1c0c395559bd04cb3c5a9b6e335887164e429cfffdc6c3f921bdbe"
+        "https://endpoint-trial.cognigy.ai/ef156b28ca1c0c395559bd04cb3c5a9b6e335887164e429cfffdc6c3f921bdbe",
+        {
+            settings: {
+                designTemplate: 2
+            }
+        }
       );
     </script>
   </body>
